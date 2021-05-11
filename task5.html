@@ -1,0 +1,32 @@
+
+<html>
+<head>
+    <title>Создание вложеных обьектов через Конструктор</title>
+    <script type="text/javascript">
+    
+    var human = new Object();
+
+    human.firstName = "Alex";
+    human.seconName = "Jazun";
+    human.age = 27;
+
+    //Создание вложенного объекта
+    human.occupation = new Object();
+
+    human.occupation.company = "Microsoft";
+    human.occupation.position = "Web Developer";
+
+    document.write("<p>First name:" + human.firstName);
+    document.write("<p>First name:" + human.secondName);
+    document.write("<p>Age" + human.age + "years old");
+        
+    //Обращение к вложенному объекту.
+    document.write("<p>Company:" + human.occupation.company);
+    document.write("<p>Position" + human.occupation.position);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
